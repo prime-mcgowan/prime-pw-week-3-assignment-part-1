@@ -104,7 +104,7 @@ console.log('The favorite foods listed now are', favoriteFoods);
 //      Then log the updated array.
 
 //Second food in my array is: wings
-favoriteFoods[2] = 'brats'
+favoriteFoods[1] = 'brats'
 console.log(favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
@@ -124,7 +124,9 @@ console.log(favoriteFoods);
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-console.log('brats and' , 'fettuccine alfredo and' , 'nachos');
+favoriteFoods = ['pizza and', 'ribs and', 'cereal']
+console.log(favoriteFoods.join());
+
 
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
@@ -134,5 +136,8 @@ console.log('brats and' , 'fettuccine alfredo and' , 'nachos');
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
 
 //Added a comma after dog
-animalArray = ['fish', 'cat', 'bird', 'dog,']
-console.log(animalArray + favoriteFoods);
+animalArray = ['fish', 'cat', 'bird', 'dog,'];
+favoriteFoods = [ 'nachos', 'fettuccine alfredo', 'wings'];
+
+let newArray = animalArray.concat(favoriteFoods);
+console.log(newArray);
